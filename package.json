@@ -37,7 +37,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "functions": "netlify-lambda serve functions --config ./webpack.functions.js "
+    "prod": "react-scripts start && netlify-lambda serve functions --config ./webpack.functions.js"
   },
   "eslintConfig": {
     "extends": [

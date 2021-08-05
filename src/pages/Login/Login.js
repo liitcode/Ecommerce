@@ -14,10 +14,10 @@ const Login = () => {
     const { user } = useSelector((state) => state.data);
 
     const dispatch = useDispatch();
-    let history = useHistory();
+    let historys = useHistory();
 
     useEffect(()=> {
-        if(user) history.push('/');
+        if(user) historys.push('/');
     },[user,dispatch]);
 
     const signIn = (e) => {

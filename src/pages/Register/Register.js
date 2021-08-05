@@ -12,10 +12,10 @@ const Register = () => {
     const { user } = useSelector(state => state.data);
 
     let dispatch = useDispatch();
-    const history = useHistory();
+    const historys = useHistory();
 
     useEffect(()=> {
-        if(user) history.push('/');
+        if(user) historys.push('/');
     },[user, dispatch]);
 
     const register = (e) => {
