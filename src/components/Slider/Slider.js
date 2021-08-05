@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Slider.css';
+import './Slider.scss';
 import { ArrowForwardIos,ArrowBackIos } from '@material-ui/icons';
 
 const Slider = ({images}) => {

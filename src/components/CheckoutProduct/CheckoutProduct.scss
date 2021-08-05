@@ -1,0 +1,37 @@
+@import '../../assets/styles/global.scss';
+
+.checkout-product{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    &-image{
+        object-fit: contain;
+        width: 180px;
+        height: 180px;
+    }
+    
+    &-info{
+        padding-left: 20px;
+        & > button {
+            @include buttonMain;
+            border: 1px solid;
+            margin-top: 10px;
+            width: 180px;
+        }
+    }
+    
+    &-title {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    &-rating {
+        display: flex;
+    }
+}
+
+
+i {
+    vertical-align: middle;
+}
