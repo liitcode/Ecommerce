@@ -1,0 +1,83 @@
+@import '../../assets/styles/global.scss';
+
+.header {
+    height: 60px;
+    background-color: $headerBg;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+ 
+    &-logo {
+        width: 100px;
+        margin-left: 20px;
+        object-fit: contain;
+        margin-right: 20px;
+        margin-top: 9px;
+    }
+    &-nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &-option {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: $primaryWhite;
+    }
+    &-link {
+        color : $primaryWhite;
+        text-decoration: none;
+    }
+    &-option1 {
+        font-size: 12px;
+        font-weight: 400;
+        font-family: Arial, sans-serif;
+    }
+    &-option2 {
+        font-size: 14px;
+        font-weight: 600;
+        font-family: Arial, sans-serif;
+}
+}
+.search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+
+    & > select {
+        height: 41px;
+        padding: 5px;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 2px 0 0 2px;
+    }
+    &-Icon {
+        padding: 5px;
+        height: 30px !important;
+        background-color: $tertiaryOrange;
+        font-size: 3.2rem !important;
+        border-radius: 0 5px 5px 0;   
+    }
+    &-Input{
+        height: 20px;
+        padding: 10px;
+        border: none;
+        width: 80%;
+        & :focus{
+            border-color: $tertiaryOrange;
+        }
+    }
+    &-basket {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.basket-count{
+    margin-left: 10px;
+    margin-right: 10px;
+}

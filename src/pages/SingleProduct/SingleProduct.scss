@@ -1,0 +1,52 @@
+@import '../../assets/styles/global.scss';
+
+.single-product {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    &-container {
+        padding: 20px;
+        background-color: $primaryWhite;
+        height: max-content;
+    }
+    &-ad {
+        width: 100%;
+        margin-bottom: 10%;
+        height: 180px;
+    }
+    &-image {
+        object-fit: contain;
+        width: 300px;
+        height: 500px;
+    }
+    &-info{
+        padding-left: 20px;
+    }
+    &-title{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    &-rating {
+        margin-top: 10px;
+        display: flex;
+    }
+    &-price {
+        margin-top: 10px;
+    }
+    &-info > button {
+        @include buttonMain;
+        border: 1px solid;
+        margin-top: 40px;
+        min-width: 150px;
+    }
+    &-description {
+        margin-top: 20px;
+    }
+    &-specification {
+        margin-top: 20px;
+    }
+}
+i {
+    vertical-align: middle;
+}

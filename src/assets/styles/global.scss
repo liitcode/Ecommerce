@@ -1,0 +1,27 @@
+
+$headerBg : #131921;
+$footerBg :#37475a;
+
+$primaryWhite : #ffffff;
+$seconadryWhite : #ccc;
+
+$primaryGray : #d3d3d3;
+$secondaryGray : #f3f3f3;
+$tertiaryGray : #dddddd;
+
+$primaryOrange : #f0c14b;
+$secondaryOrangeBorder : #a88734 #9c7e31 #846a29;
+$tertiaryOrange : #fcba03;
+
+$primaryBlack : #111;
+$tertiaryBlack : #2b2727;
+
+$downGradient : linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+
+@mixin buttonMain {
+    background: $primaryOrange;
+    color: $primaryBlack;
+    border-color: $secondaryOrangeBorder;
+    cursor: pointer;
+}
+

@@ -1,5 +1,5 @@
 import React,{ useState, useEffect }from 'react';
-import './BackToTop.css';
+import './BackToTop.scss';
 
 const BackToTop = () => {
     const[isVisible,setIsVisible] = useState(false);
@@ -28,7 +28,7 @@ const BackToTop = () => {
        <div className="scroll-to-top">
            {isVisible && (
                <div className="back-top-container" onClick={scrollToTop} >
-                Back To Top
+                <p className="back-top-container-text">Back To Top</p>     
                </div>
            )
            }

@@ -1,14 +1,14 @@
 import React from 'react';
-import './Home.css';
+import './Home.scss';
 import { headerItems, products } from '../../utils/data'
-import Banner1 from '../../banners/b1.jpg';
-import Banner2 from '../../banners/b2.jpg';
-import Banner3 from '../../banners/b3.jpg';
-import Banner4 from '../../banners/b4.jpg';
-import Banner5 from '../../banners/b5.jpg';
-import Banner6 from '../../banners/b6.jpg';
-import Banner7 from '../../banners/b7.jpg';
-import Banner8 from '../../banners/b8.jpg';
+import Banner1 from '../../assets/banners/b1.jpg';
+import Banner2 from '../../assets/banners/b2.jpg';
+import Banner3 from '../../assets/banners/b3.jpg';
+import Banner4 from '../../assets/banners/b4.jpg';
+import Banner5 from '../../assets/banners/b5.jpg';
+import Banner6 from '../../assets/banners/b6.jpg';
+import Banner7 from '../../assets/banners/b7.jpg';
+import Banner8 from '../../assets/banners/b8.jpg';
 import Slider from '../../components/Slider/Slider';
 import Product from '../../components/Product/Product';
 import BackToTop from '../../components/BackToTop/BackToTop';

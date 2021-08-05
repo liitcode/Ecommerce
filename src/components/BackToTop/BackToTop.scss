@@ -1,3 +1,5 @@
+@import '../../assets/styles/global.scss';
+
 .scroll-to-top{
     position: fixed;
     bottom: 0.5rem;
@@ -19,7 +21,11 @@
     height: 40px;
     text-align: center;
     width: 1470px;
-    background-color: #37475a;
-    color: #fff;
+    background-color: $footerBg;
+    color: $primaryWhite ;
     margin-right: 15px;
+    
+    &-text {
+        vertical-align: middle;
+    }
 }
