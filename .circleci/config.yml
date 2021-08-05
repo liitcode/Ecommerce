@@ -3,6 +3,7 @@ version: 2.1
 # Use a package of configuration called an orb.
 orbs:
   node: circleci/node@4.6.0
+  welcome: circleci/welcome-orb@0.4.1
 # Orchestrate or schedule a set of jobs
 jobs:
   example-job:
@@ -12,8 +13,11 @@ jobs:
     steps:
       - node/install-npm:
           version: latest 
+      - node/install-packages
+
 
 workflows:
-  example-workflow:
+  welcome:
+    # Run the welcome/run job in its own container
     jobs:
-      - example-job
+      - welcome/run
