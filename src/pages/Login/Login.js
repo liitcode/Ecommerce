@@ -1,15 +1,30 @@
-import React,{ useState } from 'react';
-import './Login.css';
-import { Link } from 'react-router-dom';
-import Logo from '../../logo_dark.png';
+import React,{ useState, useEffect } from 'react';
+import './Login.scss';
+import { Link, useHistory } from 'react-router-dom';
+import Logo from '../../assets/logo/logo_dark.png';
+import { useSelector, useDispatch } from 'react-redux';
+import { loginInitiate } from '../../redux/actions';
+
 
 const Login = () => {
 
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
 
+    const { user } = useSelector((state) => state.data);
+
+    const dispatch = useDispatch();
+    let history = useHistory();
+
+    useEffect(()=> {
+        if(user) history.push('/');
+    },[user,dispatch]);
+
     const signIn = (e) => {
         e.preventDefault();
+        dispatch(loginInitiate(email,password));
+        setEmail('');
+        setPassword('');
     }
 
     return (

@@ -1,15 +1,28 @@
-import React,{ useState } from 'react';
-import './Register.css';
-import { Link } from 'react-router-dom';
-import Logo from '../../logo_dark.png';
-
+import React,{ useState, useEffect } from 'react';
+import './Register.scss';
+import { Link, useHistory } from 'react-router-dom';
+import Logo from '../../assets/logo/logo_dark.png';
+import { useSelector, useDispatch } from 'react-redux';
+import { registerInitiate } from '../../redux/actions';
 
 const Register = () => {
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
 
+    const { user } = useSelector(state => state.data);
+
+    let dispatch = useDispatch();
+    const history = useHistory();
+
+    useEffect(()=> {
+        if(user) history.push('/');
+    },[user, dispatch]);
+
     const register = (e) => {
         e.preventDefault();
+        dispatch(registerInitiate(email,password));
+        setEmail('');
+        setPassword(''); 
     }
 
     return (
@@ -36,7 +49,7 @@ const Register = () => {
                     </button>
                     <div className="detail">
                     <p>Already have an account?</p>
-                    <Link to='/login' className='signin-link'>
+                    <Link to='/login' className='register-signin-link'>
                         <p>SignIn</p>
                     </Link>
                     </div>
