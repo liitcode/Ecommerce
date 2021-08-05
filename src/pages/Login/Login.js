@@ -18,7 +18,7 @@ const Login = () => {
 
     useEffect(()=> {
         if(user) historys.push('/');
-    },[user,dispatch]);
+    },[user,historys]);
 
     const signIn = (e) => {
         e.preventDefault();

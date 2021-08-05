@@ -16,7 +16,7 @@ const Register = () => {
 
     useEffect(()=> {
         if(user) historys.push('/');
-    },[user, dispatch]);
+    },[user, historys]);
 
     const register = (e) => {
         e.preventDefault();
