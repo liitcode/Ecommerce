@@ -27,7 +27,7 @@ const Product = ({ id, title, image, price, rating, specification, detail}) => {
                     <p>{title}</p>
                 </Link>
                 <p className="product-price"> 
-                    <strong>$</strong>
+                    <strong>₹</strong>
                     <strong>{price}</strong>
                 </p>
                 <div className="product-rating">

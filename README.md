@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Llamazon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+|Landing Page|CheckoutPage|
+|-----|-----|
+|![landing](https://ik.imagekit.io/16zqnfdfuhh/llamazon/home.png?updatedAt=1628191909448)|![checkout](https://ik.imagekit.io/16zqnfdfuhh/llamazon/checkout.png?updatedAt=1628191906481)|
 
-## Available Scripts
+|SignUp Page|Orders Page|
+|-----|-----|
+|![signup](https://ik.imagekit.io/16zqnfdfuhh/llamazon/auth.png?updatedAt=1628191900912)|![orders](https://ik.imagekit.io/16zqnfdfuhh/llamazon/Orders.png?updatedAt=1628191912097)|
 
-In the project directory, you can run:
+## How to run this project
 
-### `npm start`
+- Clone Repo 
+```gh repo clone liitcode/Llamazon```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Install NPM packages
+```npm install```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Add .env file 
+ > Firebase Configurations ->
+```Env
+ REACT_APP_APIKEY =
+ REACT_APP_AUTHDOMAIN  = 
+ REACT_APP_PROJECTID  =  
+ REACT_APP_STORAGEBUCKET = 
+ REACT_APP_SENDERID = 
+ REACT_APP_ID = 
+```
+ > Stripe Secret Key ->
+```
+ STRIPE_SECRET =     
+```
 
-### `npm test`
+- Run the Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> development
+```npm run dev```
+> production
+```npm run prod```
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## About The Project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Llamazon is a simple clone of amazon. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Project Features
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Used React, Redux-thunk for Login, Signup, Add-To-Cart and other core features.
+- Used Redux Persist for effective state management.
+- Used Firebase for Auth, Firestore DB.
+- Stripe Integration for seamless payments.
+- Serverless netlify lambda function for third-party interactions.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

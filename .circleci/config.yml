@@ -6,7 +6,7 @@ orbs:
   welcome: circleci/welcome-orb@0.4.1
 # Orchestrate or schedule a set of jobs
 jobs:
-  example-job:
+  build:
     docker:
       # replace with your preferred image
       - image: cimg/base:stable
@@ -17,7 +17,7 @@ jobs:
 
 
 workflows:
-  welcome:
+  Startup:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run

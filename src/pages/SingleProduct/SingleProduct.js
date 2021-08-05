@@ -41,7 +41,7 @@ const SingleProduct = () => {
                         ))}
                     </div>
                     <p className="single-product-price">
-                        Price: <strong>$</strong>
+                        Price: <strong>₹</strong>
                         <strong>{singleProduct.price}</strong>
                     </p>
                     <div className="single-product-specification">

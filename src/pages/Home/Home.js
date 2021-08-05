@@ -65,6 +65,20 @@ const Home = () => {
                             />
                         ))}
                     </div>
+                    <div className="home-row">
+                        {products.slice(6,10).map((item) => (
+                            <Product 
+                            key={item.id}
+                            id={item.id}
+                            title={item.title}
+                            price = {item.price}
+                            rating = {item.rating}
+                            image = {item.image}
+                            specification = {item.specification}
+                            detail = {item.detail }
+                            />
+                        ))}
+                    </div>
                     <div style={{marginTop:'50px'}}>{
                         <BackToTop />
                         }

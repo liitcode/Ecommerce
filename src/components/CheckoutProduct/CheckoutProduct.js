@@ -16,7 +16,7 @@ const CheckoutProduct = ({ id,title,image,rating,price,hideButton }) => {
             <div className="checkout-product-info">
                 <p className="checkout-product-title">{title}</p>
                 <p className="checkout-product-price">
-                    <strong>$</strong>
+                    <strong>₹</strong>
                     <strong>{price}</strong>
                 </p>
                 <div className="checkout-product-rating">{

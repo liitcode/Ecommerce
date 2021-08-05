@@ -35,7 +35,7 @@ const SubTotal = () => {
             value = {getCartTotal(cart)}
             displayType= {"text"}
             thousandSeparator={true}
-            prefix={"$"}
+            prefix={"₹"}
            />
            <button onClick={handleCheckout}>Proceed To Checkout</button>
        </div>
