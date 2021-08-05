@@ -1,0 +1,52 @@
+@import '../../assets/styles/global.scss';
+
+.payment {
+    background-color: $primaryWhite;
+    
+    &-container > h1{
+        text-align: center;
+        padding: 10px;
+        font-weight: 400;
+        background-color:$secondaryGray;
+        border-bottom: 1px solid lightgray;
+    }
+    
+    &-container > h1 a{
+        text-decoration: none;
+    }
+    
+    &-section {
+        display: flex;
+        padding: 20px;
+        margin: 0 2px;
+        border-bottom: 1px solid $primaryGray;
+    }
+    
+    &-title {
+        flex: 0.2;
+    }
+    
+    &-address , &-items, &-details {
+        flex: 0.8;
+    }
+    
+    &-details > form {
+        max-width: 400px;
+    }
+    
+    &-details > h3 {
+        padding-bottom: 20px;
+    }
+    
+    &-details > form > div > button {
+        @include buttonMain;
+        border-radius: 2px;
+        width: 50%;
+        height: 30px;
+        border: 1px solid;
+        font-weight: bolder;
+        margin-top: 10px;
+    }
+}
+
+
